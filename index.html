@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>David Brand | Cricket Insights</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: radial-gradient(circle at top, #2b0a1f, #0b0208);
+    padding:20px;
+    color:#fff;
+}
+
+.card{
+    width:100%;
+    max-width:390px;
+    background: rgba(40,5,25,0.9);
+    backdrop-filter: blur(10px);
+    border-radius:22px;
+    padding:28px 22px;
+    text-align:center;
+    box-shadow:0 25px 60px rgba(0,0,0,0.7);
+}
+
+.brand{
+    font-size:36px;
+    font-weight:900;
+    letter-spacing:2px;
+    background: linear-gradient(90deg,#ff5fa2,#ff2d7a);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    margin-bottom:12px;
+}
+
+.number{
+    font-size:48px;
+    font-weight:900;
+    color:#ff4f9a;
+    margin-bottom:14px;
+}
+
+.points{
+    text-align:left;
+    font-size:15px;
+    line-height:2;
+    margin:18px 0;
+}
+
+.points span{
+    color:#ff5fa2;
+    margin-right:6px;
+}
+
+.btn{
+    display:block;
+    width:100%;
+    background:linear-gradient(135deg,#ff5fa2,#ff2d7a);
+    color:#2b0016;
+    font-size:18px;
+    font-weight:800;
+    padding:16px;
+    border-radius:14px;
+    text-decoration:none;
+    margin:22px 0 14px;
+    box-shadow:0 12px 30px rgba(255,80,150,0.5);
+}
+
+.timer{
+    font-size:14px;
+    margin-bottom:18px;
+}
+
+.timer span{
+    color:#ff5fa2;
+    font-weight:800;
+}
+
+.footer{
+    font-size:14px;
+    opacity:0.9;
+    margin-top:10px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <div class="brand">DAVID BRAND</div>
+
+    <div class="number">53</div>
+
+    <div class="points">
+        <div><span>✔</span> Oldest Cricket Analyst 🏆</div>
+        <div><span>✔</span> Strong Match Performance Record 🏆</div>
+        <div><span>✔</span> Consistent League Analysis 🏆</div>
+    </div>
+
+    <a href="https://t.me/+33l3L_eGMNhiNWY1" class="btn">
+        SUBSCRIBE DAVID BRAND<br>TELEGRAM
+    </a>
+
+    <div class="timer">
+        FREE JOINING ENDS IN <span id="time">53</span>
+    </div>
+
+    <div class="footer">
+        Best analysis shared for cricket fans
+    </div>
+
+</div>
+
+<script>
+let t = 53;
+setInterval(()=>{
+    if(t>0){
+        t--;
+        document.getElementById("time").innerText = t;
+    }
+},1000);
+</script>
+
+</body>
+</html>
